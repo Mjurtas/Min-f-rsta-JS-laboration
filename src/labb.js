@@ -113,7 +113,8 @@ function doublePrice(arr) {
 }
 
 function and (stmt1,stmt2) {
-    (stmt1 === stmt2) ? true : false
+   (stmt1 === stmt2) ? true : false
+
 } 
 
 function removeLeadingTrailing (nmbr) {
