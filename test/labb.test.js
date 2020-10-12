@@ -70,7 +70,7 @@ describe('Labb 0', () => {
 
     describe('findMinMax takes an array of numbers and returns an object with min max keys containging min max values', () => {
 
-        test('[2,3,1] returns {min: 1, max: 2}', () => {
+        test('[2,3,1] returns {min: 1, max: 3}', () => {
             expect(findMinMax([2, 3, 1])).toMatchObject({min: 1, max: 3})
         })
 
