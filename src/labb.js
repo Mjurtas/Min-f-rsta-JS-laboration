@@ -118,9 +118,12 @@ function and (stmt1,stmt2) {
 } 
 
 function removeLeadingTrailing (nmbr) {
-    let re = new RegExp(/^0+|^0+\.|\.0+$/g)
+   /*let re = new RegExp(/^0+|^0+\.|\.0+$|[^1-9]0+$/g)
     let newnmbr = nmbr.toString().replace(re, '')
-    return parseFloat(newnmbr)
+    console.log(newnmbr) ------>  Får inte till att den inte tar bort 0:orna i 3.1400 */
+
+    return parseFloat(nmbr)
+
 }
 
 function getKeysAndValues (obj) {
@@ -132,12 +135,8 @@ function getKeysAndValues (obj) {
 
 
 
-
-
-
-
-
 //etc...
+
 
 
 // https://eloquentjavascript.net/10_modules.html#h_N33QHgUxbG how require and modules work in JavaScript
